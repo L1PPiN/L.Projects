@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int opcao;
+float a,b,c;
+cout << "Entre com tres valores: " << endl;
+cin >> a >> b >> c;
+cout << "Qual área deseja achar?" << endl;
+cout << "(1)Área do Trapézio\n(2)Área do quadrado\n(3)Área do cubo\n" << endl;
+cin >> opcao;
+switch (opcao) 
+    {
+    case 1: 
+         cout << "A Área do Trapézio é: " << (a+b)/2*c << endl;
+         break;
+    case 2: 
+         cout << "A Área do Quadrado é: " << b*b << endl;
+         break;
+    case 3: 
+         cout << "A Área do Cubo é: " << c*c*6 << endl;
+         break;
+    default: cout << "OPCAO INVÁLIDA\n";
+    }
+return 0;
+}

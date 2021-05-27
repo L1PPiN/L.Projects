@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() 
+{
+int t1,rz,qt,ut,n;
+cout << "Entre com o número de vezes que irá repetir:" << endl;
+cin >> n;
+for (int cont=1;cont<=n;cont++)
+{
+cout << "Entre com seu primeiro termo: " << endl;
+cin >> t1;
+cout << "Entre com sua razão: " << endl;
+cin >> rz;
+cout << "Digite a quantidade de termos: " << endl;
+cin >> qt;
+ut=t1+rz*(qt-1);
+cout << "Seu resultado foi: " << ut << endl;
+}
+return 0;
+}

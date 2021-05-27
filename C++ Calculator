@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main()
+{char opcao;
+float num1,num2;
+cout << "Entre com os números: " << endl;
+cin >> num1 >> num2;
+do
+{
+cout << "Que operação deseja realizar?" << endl;
+cout << "(S)SOMA ou (B)SUBTRAÇÃO ou (D)DIVISÃO ou (M)MULTIPLICAÇÃO" << endl;
+cin >> opcao;
+switch (opcao) 
+    {case 'S':
+    case 's':
+         cout << "O Resultado é: " << num1+num2 << endl;
+         break;
+    case 'B':
+    case 'b': 
+         cout << "O Resultado é: " << num1-num2 << endl;
+         break;
+    case 'D':
+    case 'd': 
+         cout << "O Resultado é: " << num1/num2 << endl;
+         break;
+    case 'M':
+    case 'm': 
+         cout << "O Resultado é: " << num1*num2 << endl;
+         break;
+    default: cout << "OPÇÃO INVÁLIDA\n";}
+} while (opcao>=5);
+return 0;
+}
